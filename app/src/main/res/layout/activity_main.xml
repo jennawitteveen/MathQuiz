@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/masterLayout"
+
+    android:animationCache="true">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/mathbkg"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutIntroScreen"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <TextView android:text="@string/enter_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextName"
+            android:layout_marginTop="100dp"
+            android:inputType="textPersonName|text"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="50dp"
+            android:textSize="25sp"
+            android:textColorHighlight="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:shadowColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:hint="name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:id="@+id/buttonEnterName"
+            android:layout_below="@+id/editTextName"
+            android:layout_centerHorizontal="true"
+            android:onClick="buttonOnClick"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false"
+            android:padding="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">lrn2math</string>
+
+    <string name="enter_name">what is your name?</string>
+    <string name="select_category">select a category to get tested on</string>
+    <string name="score">final score</string>
+    <string name="done">done</string>
+
+    <string name="addition">addition</string>
+    <string name="subtraction">subtraction</string>
+    <string name="multiplication">multiplication</string>
+    <string name="division">division</string>
+
+    <string name="addition_symbol">\u002B</string>
+    <string name="subtraction_symbol">\u2212</string>
+    <string name="multiplication_symbol">\u00D7</string>
+    <string name="division_symbol">\u00F7</string>
+
+    <string name="new_player">new player</string>
+    <string name="score_button">score</string>
+
+    <string name="correct">correct</string>
+    <string name="incorrect">incorrect</string>
+    <string name="hello_world">Hello, </string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_pick_operation">PickOperationActivity</string>
+    <string name="title_activity_quiz">math quiz</string>
+    <string name="title_activity_select_category">SelectCategoryActivity</string>
+    <string name="title_activity_score">score</string>
+</resources>

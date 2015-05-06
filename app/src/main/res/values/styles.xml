@@ -1,0 +1,19 @@
+<resources>
+    <color name="back_color">#FF202020</color>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:buttonStyle">@style/basic_button</item>
+        <item name="android:windowBackground">@color/back_color</item>
+    </style>
+    <style name="basic_button" parent="android:style/Widget.Button">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#ff303030</item>
+    </style>
+    <style name="input_text" parent="android:style/Widget.EditText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#ff303030</item>
+    </style>
+</resources>

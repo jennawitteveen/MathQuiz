@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.jwitteveen.project4_mathquiz.QuizActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageViewBkQuiz"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mathbkg"
+        android:scaleType="centerCrop"
+        android:cropToPadding="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/score_button"
+        android:id="@+id/textViewScoreLabel"
+        android:layout_toStartOf="@+id/textViewQuizScore"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/textViewQuizScore"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewQuizName"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewProblem"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:text="2 + 2"
+        android:layout_alignTop="@+id/textViewQuizName"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/gridLayout2"
+        android:gravity="center_vertical" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/buttonAnswer1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:minHeight="140dp"
+            android:minWidth="140dp"
+            android:layout_marginTop="0dp"
+            android:textSize="50sp"
+            android:onClick="answerButtonClick"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/buttonAnswer2"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:minWidth="140dp"
+            android:minHeight="140dp"
+            android:layout_marginTop="0dp"
+            android:textSize="50sp"
+            android:onClick="answerButtonClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/buttonAnswer3"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:minHeight="140dp"
+            android:minWidth="140dp"
+            android:textSize="50sp"
+            android:onClick="answerButtonClick"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/buttonAnswer4"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:minWidth="140dp"
+            android:minHeight="140dp"
+            android:textSize="50sp"
+            android:onClick="answerButtonClick" />
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/gridLayout2"
+        android:layout_alignEnd="@+id/gridLayout2"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_button"
+        android:id="@+id/buttonScore"
+        android:minWidth="120dp"
+        android:onClick="answerButtonClick"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignBottom="@+id/gridLayout2"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_player"
+        android:id="@+id/buttonNewPlayer"
+        android:minWidth="120dp"
+        android:onClick="answerButtonClick"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignStart="@id/linearLayout" />
+
+</RelativeLayout>

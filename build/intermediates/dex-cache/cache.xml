@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Jenna\AndroidStudioProjects\Project4_MathQuiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Jenna\AndroidStudioProjects\Project4_MathQuiz\app\build\intermediates\pre-dexed\debug\classes-c4b7f51d7d590f9696ff082649f8de6d8fcdcd38.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jenna\AndroidStudioProjects\Project4_MathQuiz\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Jenna\AndroidStudioProjects\Project4_MathQuiz\app\build\intermediates\pre-dexed\debug\classes-fd641acdce11287eaee6c84db552768a1a1db30b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jenna\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Jenna\AndroidStudioProjects\Project4_MathQuiz\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-eb022c3dfb0077adc032809e4e39517d825918ec.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jenna\AndroidStudioProjects\Project4_MathQuiz\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Jenna\AndroidStudioProjects\Project4_MathQuiz\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-2ac0dc138aff546721cef58c3f03417e2a4cedda.jar" />
+    </item>
+
+</items>

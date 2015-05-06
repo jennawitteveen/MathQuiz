@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.google.jwitteveen.project4_mathquiz.ScoreActivity"
+    android:backgroundTintMode="src_over">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageViewBkg"
+        android:src="@drawable/mathbkg"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentEnd="false"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlOne">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewScoreGreeting"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="50dp"
+            android:text="Thanks for playing"
+            android:textAlignment="gravity"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:gravity="right"
+            android:paddingRight="10dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/correct"
+        android:id="@+id/textViewCorrect"
+        android:autoText="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_alignParentStart="false"
+        android:layout_above="@+id/textViewIncorrect"
+        android:layout_marginLeft="10dp"
+        android:gravity="right"
+        android:layout_toStartOf="@+id/textViewCorrectScore"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textViewCorrectScore"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/textViewIncorrectScore"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/incorrect"
+        android:id="@+id/textViewIncorrect"
+        android:autoText="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignEnd="@+id/textViewCorrect"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textViewIncorrectScore"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@+id/textViewIncorrect"
+        android:layout_alignEnd="@+id/textViewCorrectScore"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="250"
+        android:id="@+id/textViewScoreField"
+        android:textSize="100sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:text="@string/score" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textViewScoreTitle"
+        android:textSize="50sp"
+        android:layout_above="@+id/textViewScoreField"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total questions"
+        android:id="@+id/textViewQuestionLabel"
+        android:layout_above="@+id/textViewCorrect"
+        android:layout_toStartOf="@+id/textViewCorrectScore"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:singleLine="false"
+        android:phoneNumber="false"
+        android:password="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewQuestionNum"
+        android:textSize="30sp"
+        android:paddingLeft="50dp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/textViewCorrect"
+        android:layout_alignEnd="@+id/textViewCorrectScore" />
+
+</RelativeLayout>
